@@ -14,9 +14,10 @@ const userRole = {
 };
 
 const Sidebar = () => {
+  const role ='admin'
   let sidebarItems;
 
-  switch ((user as TUser)!.role) {
+  switch (role) {
     case userRole.ADMIN:
       sidebarItems = sidebarItemsGenerator(adminPaths, userRole.ADMIN);
       break;
@@ -39,7 +40,12 @@ const Sidebar = () => {
         <div style={{color:'white', height:'4rem',display:'flex', justifyContent:'center', alignItems:'center'}} >
         <h2>PH Uni</h2>
          </div>
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']} items={sidebarItems} />
+        <Menu 
+        theme="dark" 
+        mode="inline" 
+        defaultSelectedKeys={['4']} 
+        items={sidebarItems}
+         />
       </Sider>
     );
 };
