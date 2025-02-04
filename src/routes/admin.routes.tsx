@@ -1,4 +1,5 @@
 import CreateStudent from "../components/CreateStudent";
+import AcademicSemester from "../pages/admin/academicManagement/AcademicSemester";
 import AdminDashboard from "../pages/admin/AdminDashboard";
 
 export const adminPaths = [
@@ -7,6 +8,16 @@ export const adminPaths = [
       path: 'dashboard',
       element: <AdminDashboard />,
     },
+    {
+      name: 'Academic Management',
+      children: [
+        {
+          name: 'Academic Semester',
+          path: 'academic-semester',
+          element: <AcademicSemester />,
+        },
+      ]
+  },
     {
         name: 'User Management',
         children: [
