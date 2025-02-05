@@ -2,9 +2,9 @@ import CreateStudent from "../components/CreateStudent";
 import AcademicDepartment from "../pages/admin/academicManagement/AcademicDepartment";
 import AcademicFaculty from "../pages/admin/academicManagement/AcademicFaculty";
 import AcademicSemester from "../pages/admin/academicManagement/AcademicSemester";
-import CreateAcademicDepartment from "../pages/admin/academicManagement/CreateAcademicDepartment";
-import CreateAcademicFaculty from "../pages/admin/academicManagement/CreateAcademicFaculty";
-import CreateAcademicSemester from "../pages/admin/academicManagement/CreateAcademicSemester";
+import CreateAcademicDepartment from "../pages/admin/userManagement/CreateAcademicDepartment";
+import CreateAcademicFaculty from "../pages/admin/userManagement/CreateAcademicFaculty";
+import CreateAcademicSemester from "../pages/admin/userManagement/CreateAcademicSemester";
 import AdminDashboard from "../pages/admin/AdminDashboard";
 
 export const adminPaths = [

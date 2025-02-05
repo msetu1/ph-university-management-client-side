@@ -46,8 +46,6 @@ const CreateAcademicSemester = () => {
                 toast.error('Something went wrong',{id:toastId})
             }
     }
-    
-    
     return (
         <Flex justify="center" align="center">
             <Col span={6}>
