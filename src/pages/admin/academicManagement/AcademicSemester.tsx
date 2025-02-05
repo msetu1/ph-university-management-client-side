@@ -1,4 +1,4 @@
-import { Table } from "antd";
+import { Button, Table } from "antd";
 import type { TableColumnsType, TableProps } from 'antd';
 import { useGetAllSemesterQuery } from "../../../redux/feature/admin/academicManagement.api";
 import { TAcademicSemester } from "../../../types/academicManagement";
@@ -63,6 +63,16 @@ const AcademicSemester = () => {
         {
           title: 'End Month',
           dataIndex: 'endMonth',
+        },
+        {
+          title: 'Action',
+          key:'X',
+          dataIndex: 'endMonth',
+          render:()=>{
+            return (
+              <div><Button>Update</Button></div>
+            )
+          }
         },
       ];
       const onChange: TableProps<TTableData>['onChange'] = (_pagination, filters, _sorter, extra) => {
